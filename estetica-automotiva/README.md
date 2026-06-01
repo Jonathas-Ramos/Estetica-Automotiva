@@ -38,7 +38,7 @@ Aplicacao Java Web para controle de clientes e agendamento autonomo de servicos 
 mvn spring-boot:run
 ```
 
-Com MongoDB Atlas:
+Com MongoDB Compass:
 
 ```bash
 set MONGODB_URI=mongodb+srv://USUARIO:SENHA@CLUSTER.mongodb.net/esteticas_automotivas
@@ -72,7 +72,7 @@ $env:ADMIN_PASSWORD="uma-senha-forte"
 mvn test
 ```
 
-## MongoDB Atlas
+## MongoDB Compass
 
 Crie um cluster no MongoDB Atlas, libere o IP de acesso, crie um usuario de banco e copie a connection string para a variavel `MONGODB_URI`. As colecoes usadas sao:
 
@@ -87,19 +87,9 @@ O sistema registra consentimento no cadastro, usa hash BCrypt para senhas e evit
 
 ## Diagramas UML
 
-Os diagramas PlantUML estao em `docs/uml`:
 
-- `diagrama-classes.puml`
-- `diagrama-sequencia-agendamento.puml`
 
-## Publicacao no GitHub
 
-Crie um repositorio no GitHub e execute:
-
-```bash
-git init
-git add .
-git commit -m "Projeto estetica automotiva"
 git branch -M main
 git remote add origin https://github.com/SEU_USUARIO/estetica-automotiva.git
 git push -u origin main
